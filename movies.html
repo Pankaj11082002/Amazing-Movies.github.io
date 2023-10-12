@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AA Movies</title>
+	<link rel="stylesheet" href="movies.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="365-Images/365ep.jpg">
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><img src="https://img.freepik.com/premium-vector/film-logo-initial-letter-movie-logo-design-template-element-eps10-vector_252051-5430.jpg?w=360"
+				alt="icon-image" id="header-icon" style="width: 100px; height: 100px;"></a>
+		<ul class="header-links">
+			<a href="index.html" id="Home">Home</a>
+			<a href="movies.html" id="movies">Movies</a>
+			<a href="Webseries.html" id="tvseries">Web Series</a>
+			<a href="Anime.html" id="audio">Anime</a>
+		</ul>
+	</div>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			
+				<img src="https://i.ytimg.com/vi/_e9y729xeck/maxresdefault.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://www.filmofilia.com/wp-content/uploads/2012/07/life-of-pi1.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://images2.alphacoders.com/616/616490.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://flxt.tmsimg.com/assets/p14113286_v_h10_af.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<div class="container">
+		<div class="search-container">
+			<div class="dropdown">
+				<button class="dropbtn"><span id="filter">Genre</span><i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="#display" id="all">All</a>
+					<a href="#display" id="drama">Romance</a>
+					<a href="#display" id="action">Action</a>
+					<a href="#display" id="scifi">Sci-Fi</a>
+				</div>
+			</div>
+			<input type="text" placeholder="Search your favourite movie title" class="search" oninput="update(this.value)">
+		</div>	
+			
+		<!-- Media Courasel ends -->
+		
+		<div class="display">
+			<div class="image-display-action"><img
+				src="https://www.gethucinema.com/wp-content/uploads/2016/06/ClpEXCvUsAEcOPk-2.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Remo</b>
+					<p>Romance/Comedy</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://moviegalleri.net/wp-content/uploads/2021/07/Actor-Suriya-Jai-Bhim-Movie-First-Look-Poster-HD.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Jai Bhim</b>
+					<p>Legal drama/Mystery</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://i.redd.it/jb5aaywg7sy71.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Batman</b>
+					<p>Marvel</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">3 Idiots</b>					
+					<p>Comedy/Romance</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://m.media-amazon.com/images/M/MV5BOTQ5Nzc3NzAtMzZlMS00ZWJjLWIxMGMtNDU4ZTQ1NmNjMjc5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Kabhi Khushi Kabhie Gham</b>					
+					<p>Musical/Romance</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://www.filmibeat.com/ph-big/2012/03/akshay-kumar-sonakshi-sinha_13310919390.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title action">Rowdy Rathore</b>
+					<p> Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMzI4Mzg3NTEtMDFhMy00ZTUxLWJiYTItYTM2NGU4MWVmMDAyXkEyXkFqcGdeQXVyNDkxMzY0Mjk@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Agnipaath</b>
+					<p>Action/Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://cdn.bollywoodmdb.com/fit-in/movies/largethumb/2018/mud-mud-ke-na-dekh/poster.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Andhadhun</b>
+					<p> Crime/Comedy</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_FMjpg_UX1000_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">RRR</b>
+					<p>Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://upload.wikimedia.org/wikipedia/en/1/13/Dhoom_2_%282006_film%29_poster.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Dhoom 2</b>
+					
+					<p>Action/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.themoviedb.org/t/p/original/AfXw3LGbywC4jxpHZ46sMnkh7nl.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Sholay</b>
+					<p>Musical/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://wallpapercave.com/wp/wp4019377.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Kgf</b>					
+					<p> Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpaperaccess.com/full/5153364.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">
+						Pushpa: The Rise - Part 1</b>					
+					<p>Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.chitramala.in/wp-content/gallery/srimanthudu-movie-posters/Srimanthudu-Telugu-Movie-Latest-Poster.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Sreemanthudu</b>					
+					<p>Romance/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpapercave.com/wp/wp7517293.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Pokiri</b>					
+					<p>Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://files.prokerala.com/movies/pics/800/movie-designs-102549.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Jersey</b>					
+					<p>Sports/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://media5.bollywoodhungama.in/wp-content/uploads/2016/03/74637321.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Kai Po Che</b>					
+					<p>Sports/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://m.media-amazon.com/images/M/MV5BYjg1NWRmNTgtNmNhNi00ZjRiLWI5MjItYzZmODgwNGNiY2Y4XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Raabta</b>					
+					<p>Romance/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://e0.pxfuel.com/wallpapers/104/660/desktop-wallpaper-interstellar-interstellar-movie-poster-background-film-poster.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Interstellar</b>					
+					<p>Sci-Fi</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://c4.wallpaperflare.com/wallpaper/144/450/423/star-wars-movies-star-wars-the-last-jedi-poster-wallpaper-preview.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Star Wars</b>					
+					<p>Sci-Fi</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.themoviedb.org/t/p/original/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Thor</b>					
+					<p>Action/Adventure</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://e1.pxfuel.com/desktop-wallpaper/404/148/desktop-wallpaper-athadu.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Athadu</b>			
+					<p>Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMjU1ODM1MzYxN15BMl5BanBnXkFtZTgwOTA4NDE2ODE@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">X-Men</b>					
+					<p> Action/Sci-fi</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://stat5.bollywoodhungama.in/wp-content/uploads/2017/03/Bahubali-2-The-Conclusion.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Bahubali 2</b>					
+					<p>Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpapercave.com/wp/wp3405076.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Iron-Man</b>					
+					<p>Marvel</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Hulk</b>					
+					<p>Marvel</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://upload.wikimedia.org/wikipedia/en/c/c3/PK_poster.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">PK</b>
+					<p>Drama/Romance </p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BZTM4ODJlZmMtZGVmMS00ZDFjLWFkYzgtYjk3NDNhZDg3NjNlXkEyXkFqcGdeQXVyNzkxOTEyMjI@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Super 30</b>
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpapercave.com/wp/wp9737478.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">War</b>
+					<p>Action/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://m.media-amazon.com/images/M/MV5BYTEyYjgzNmUtM2QyYi00MWMwLWExMDctZmY1NmZhNGY5MWNiXkEyXkFqcGdeQXVyOTcwMTQxMTM@._V1_UY1200_CR165,0,630,1200_AL_.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Vikram Vedha</b>
+					<p>Suspence/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://i.pinimg.com/originals/ae/64/9a/ae649a33db8e4b37fb0db673d33b73db.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Superman</b>
+					<p>Sci-fi/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://static.toiimg.com/photo/61271391.cms"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Sultan</b>
+					<p>Marvel</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://i.pinimg.com/originals/91/13/79/911379ee2a1bc5388414ec692aea80d7.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Doctor Strange</b>
+					<p>Marvel</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BYWI2ODNjMDktZjcxNS00YThkLTljMDUtMGIyOTg3ZjY2MjlhXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Major</b>
+					<p> Action/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BZGRkYzhmYTUtZWE1Yy00OGJjLTg5NTUtZGVhMmY4ZmM3NGE1XkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Goodachari</b>
+					<p>Thriller/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://moviegalleri.net/wp-content/uploads/2019/04/Mahesh-Babu-Maharshi-Movie-Ugadi-Wishes-Poster-HD.jpg" 
+					style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Maharshi</b>
+					<p>Romance/Action</p>
+				</div>
+			</div>
+		</div>
+
+		<p class="found hide">No Results Found</p>
+	</div>
+
+	<footer class="footer">
+		<img src="https://img.freepik.com/premium-vector/film-logo-initial-letter-movie-logo-design-template-element-eps10-vector_252051-5430.jpg?w=360" id="footer-icon" style="width: 100px; height: 100px;">
+		<p id="rights">Powered by AA Entertainment 2023. All Rights Reserved.</p>
+	</footer>
+	<div class="after-footer"></div>
+	<script src="script.js"></script>
+	<script src="movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AA Movies</title>
+	<link rel="stylesheet" href="movies.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="365-Images/365ep.jpg">
+</head>
+<body>
+	<div class="header">
+		<a href="index.html"><img src="https://img.freepik.com/premium-vector/film-logo-initial-letter-movie-logo-design-template-element-eps10-vector_252051-5430.jpg?w=360"
+				alt="icon-image" id="header-icon" style="width: 100px; height: 100px;"></a>
+		<ul class="header-links">
+			<a href="index.html" id="Home">Home</a>
+			<a href="movies.html" id="movies">Movies</a>
+			<a href="Webseries.html" id="tvseries">Web Series</a>
+			<a href="Anime.html" id="audio">Anime</a>
+		</ul>
+	</div>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			
+				<img src="https://wallpapers.com/images/featured/squid-game-fvsfw2qlkey7u5o8.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://wallpaperaccess.com/full/2758843.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://dailyresearchplot.com/wp-content/uploads/2021/09/Money-Heist-Season-5-Volume-1.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<div class="mySlides fade">
+			<img src="https://e1.pxfuel.com/desktop-wallpaper/591/454/desktop-wallpaper-tv-rewind-prison-break-season-1-prison-break-season-1.jpg"
+				style="width:100%;height: 50rem;">
+		</div>
+	
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	<div class="container">
+		<div class="search-container">
+			<div class="dropdown">
+				<button class="dropbtn"><span id="filter">Genre</span><i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="#display" id="all">All</a>
+					<a href="#display" id="drama">Drama</a>
+					<a href="#display" id="action">Action</a>
+					<a href="#display" id="scifi">Crime</a>
+				</div>
+			</div>
+			<input type="text" placeholder="Search your favourite movie title" class="search" oninput="update(this.value)">
+		</div>	
+			
+		<!-- Media Courasel ends -->
+		
+		<div class="display">
+			<div class="image-display-action"><img
+				src="https://m.media-amazon.com/images/M/MV5BYjU2NDY0ZTktYTM2Zi00NzhlLWIzZGUtMWE0N2MzNGI2YTkxXkEyXkFqcGdeQXVyMTA3MTI2ODc5._V1_FMjpg_UX1000_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">The Night Manager</b>
+					<p>Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://m.media-amazon.com/images/M/MV5BNThlNGZjZDQtYzJjMi00MzM4LWFkNjctNDMwZmFjNWJkM2I4XkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_FMjpg_UX1000_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Farzi</b>
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://assets.gadgets360cdn.com/pricee/assets/product/202111/Mirzapur-250_1636462645.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Mirzapur season 1</b>
+					<p>Crime/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://assets.gadgets360cdn.com/pricee/assets/product/202203/Gullak-S3-poster_1647190566.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Gullak</b>					
+					<p>Comedy/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+				src="https://m.media-amazon.com/images/M/MV5BNjgxZTMxNmQtZGFkZS00NDUyLTllMzYtOTE0ZjdlMjM1ZWU0XkEyXkFqcGdeQXVyMTAyMTE1MDA1._V1_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title action">Scam 1992</b>					
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title action">Squid Games</b>
+					<p> Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.themoviedb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Money Heist season 1</b>
+					<p>Crime/Action.</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://pbs.twimg.com/media/FFwEOtrVcAA2FrA.jpg:large" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Mirzapur season 2</b>
+					<p>Thriller/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://e1.pxfuel.com/desktop-wallpaper/956/715/desktop-wallpaper-the-family-man-season-2-the-family-man-thumbnail.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Family Man</b>
+					<p>Thriller/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BODg1MTYyZjYtMzJhZi00ZjI3LWI3MTItZTFhZDNhZmYwMjYwXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Delhi Crime season 1</b>
+					
+					<p>Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpapercave.com/wp/wp3988788.jpg" style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Prison Break season 1</b>
+					<p>Action/crime.</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://starsunfolded.com/wp-content/uploads/2021/02/Gullak-Season-2.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Gullack season 2</b>					
+					<p>Comedy Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://wallpapercave.com/wp/wp7978511.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Money Heist season 2</b>					
+					<p>Action/Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://static.toiimg.com/photo/msid-99938974/99938974.jpg?11914"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Firefiles</b>					
+					<p>Horror</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BZWJiMDZmNTAtZDg5YS00NDgyLThkMzctYTczZjllNzU0YWY5XkEyXkFqcGdeQXVyMTAwMDI3ODEw._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Asur</b>					
+					<p>Crime/Action</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BNTE2YmM2ZmQtNTZkNy00OTJlLTk0MzgtZjY2NzA0OGM4MTZiXkEyXkFqcGdeQXVyNTg4NzA4Mzk@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Physics Waala</b>					
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.themoviedb.org/t/p/original/7eF9QnauioOeQUoy2NNkizFvHUO.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title drama">Criminal Justice Season 1</b>					
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://1.bp.blogspot.com/-lQ3aIWfS6L0/X6LzDYTFJFI/AAAAAAAARsI/HP66ncu0JjMvuauz-T8TPtBp4aolI4hOgCLcBGAsYHQ/s1554/August%2B29%252C%2B2018%2B4_30-6_00%2BPM%2BRoom%2B204.png"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title drama">Mirzapur Season 3</b>					
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://www.themoviedb.org/t/p/w500/bp2MEZT8dsl33ULA8RA1IK6ZbZ.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Money Heist season 3</b>					
+					<p>Action/Crime
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://1.bp.blogspot.com/-f4ojyVI2czc/YJE7FkeMOJI/AAAAAAAAVUk/Cj2GgPyH2moruGeGCLr2j_N2aHi-cuPCwCLcBGAsYHQ/w1200-h630-p-k-no-nu/the-family-man-2-Web%2BSeries.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Family Man season 2</b>					
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://i.gadgets360cdn.com/large/delhi_crime_season_2_poster_shefali_shah_1659939489814.jpeg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Delhi Crime 2</b>					
+					<p>Crime/Thriller</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Gullak.jpg/220px-Gullak.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Gullak season 3</b>			
+					<p>Comedy/Drama.</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BNjczODVjMmMtNTVlNy00MjlkLWEyZjYtOThiYzMwZmIyNWZkXkEyXkFqcGdeQXVyMTY0NjI3Mjcx._V1_FMjpg_UX1000_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Asur 2</b>					
+					<p>Action/Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://m.media-amazon.com/images/M/MV5BN2NlNGYwYTUtMTczMi00NGVjLTgwMzUtNjBkZjIyNDc2NjcxXkEyXkFqcGdeQXVyODQ5NDUwMDk@._V1_.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Mirzapur season 4</b>					
+					<p>Action/Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BNzY1NDE2MWQtNzJlOC00MGZiLTkxN2YtMTQ5YWVkMTA2MGU5XkEyXkFqcGdeQXVyMTE0MDk1NjA1._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Aarya</b>					
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BNWRkMjA0NjItMmViYS00MDQyLTgyMWYtOWFmOTA4NmU5MjRjXkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Aspirants</b>					
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BZGZiMjU2ZjUtZjQzNi00NzlkLWFhNTQtOGVjNTJmN2ExY2E2XkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Kota Factory</b>
+					<p>Comedy/Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BZDkxODJmNDktZDcxMy00MGJkLWI3NzEtNzVkYTdkZWI0ZmVkXkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Panchayat</b>
+					<p>Comedy</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMDZhNDU0NjQtYzc4MS00Yjg2LWIzYmUtZjUzNTcyYmNmNjNkXkEyXkFqcGdeQXVyMTAyMTE1MDA1._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Undekhi</b>
+					<p>Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img src="https://assets.gadgets360cdn.com/pricee/assets/product/202111/AaryaS2-250_1638179728.jpg"  style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Aarya 2</b>
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BOTViZTI3MDItYzJjNi00ZTE0LWI0MTctY2FlMzY3MGI2ZTAyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Rocket Boys</b>
+					<p>Drama</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMDc3Zjc4NjAtMTI2MC00YmQwLTk3MmItZTZiNWM0YmNiNmNkXkEyXkFqcGdeQXVyNDAzNDk0MTQ@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Special Ops</b>
+					<p>Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BNWZkNDQ5NzAtOGViMy00Y2Q2LTlhZmEtY2RlN2EwZmRmNzcwXkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_.jpg"style="width: 230px; height: 300px;" >
+				<div class="movie-display">
+					<b class="title">Rudra: The Edge of Darkness</b>
+					<p>Crime</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BMjMwMTViZDQtM2ZkOC00NjIzLTliYjAtZTFmNWRlMzQ0NzI2XkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Hostages</b>
+					<p>Mystery</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BYzM5ZjllNDYtMjRlYS00ODkzLWJiNTMtMTEyNzA0OGRjMzAzXkEyXkFqcGdeQXVyMTExMTIzMTA5._V1_UY1200_CR90,0,630,1200_AL_.jpg" style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Flames</b>
+					<p>Comedy</p>
+				</div>
+			</div>
+			<div class="image-display-action"><img
+					src="https://m.media-amazon.com/images/M/MV5BYjM1ZTVhY2UtY2QxNS00YWZhLThkYmUtNmM5MTdkNDI2NDk2XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg" 
+					style="width: 230px; height: 300px;">
+				<div class="movie-display">
+					<b class="title">Aranyak</b>
+					<p>Crime</p>
+				</div>
+			</div>
+		</div>
+
+		<p class="found hide">No Results Found</p>
+	</div>
+
+	<footer class="footer">
+		<img src="https://img.freepik.com/premium-vector/film-logo-initial-letter-movie-logo-design-template-element-eps10-vector_252051-5430.jpg?w=360" id="footer-icon" style="width: 100px; height: 100px;">
+		<p id="rights">Powered by AA Entertainment 2023. All Rights Reserved.</p>
+	</footer>
+	<div class="after-footer"></div>
+	<script src="script.js"></script>
+	<script src="movies.js"></script>
+</body>
+</html>
